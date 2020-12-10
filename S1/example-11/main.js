@@ -9,7 +9,6 @@ if (age < 18) {
     console.log("Bienvenido Vengador");
 }
 
-
 const sortWord = 'Fresa';
 // const sortWord = 'Esternocleidomastoideo';
 
