@@ -31,3 +31,4 @@ console.log(dataFunction2$$);
 const fn$$ = document.querySelector('.fn-test');
 
 console.log(fn$$);
+
