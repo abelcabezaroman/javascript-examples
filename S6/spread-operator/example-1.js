@@ -30,18 +30,18 @@ const pokemon1 = { name: 'Pikachu', gen: 1, type: 'electric' };
 const pokemon2 = { name: 'charizard', gen: 1, type: 'fire' };
 
 
-const copy1 = {...pokemon1}; // coge los valores de pokemon1 y los introduce en un nuevo objeto. Creando asi una copia
+const copy1 = { ...pokemon1 }; // coge los valores de pokemon1 y los introduce en un nuevo objeto. Creando asi una copia
 
 
-const action = {action: 'Fly', time: '60 seconds'};
+const action = { action: 'Fly', time: '60 seconds' };
 
-const copy2 = {...pokemon1, ...pokemon2}; 
-const copy3 = {...pokemon2, ...action}; 
+const copy2 = { ...pokemon1, ...pokemon2 };
+const copy3 = { ...pokemon2, ...action };
 
 console.log(copy2);
 console.log(copy3);
 
-const pokemon3 = {name: 'Ditto', gen: 1, type: 'normal', action: 'copy'};
-const copy4 = {...pokemon3, ...pokemon1};
+const pokemon3 = { name: 'Ditto', gen: 1, type: 'normal', action: 'copy' };
+const copy4 = { ...pokemon3, ...pokemon1 };
 
 console.log(copy4);
