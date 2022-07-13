@@ -23,7 +23,7 @@ console.log(dataFunction$$);
 
 // BUENA PRACTICA
 
-const dataFunction2$$ = document.querySelector('[data-function="test"]');
+const dataFunction2$$ = document.querySelector('[data-fn="test"]');
 
 console.log(dataFunction2$$);
 

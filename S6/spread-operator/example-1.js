@@ -35,13 +35,13 @@ const copy1 = { ...pokemon1 }; // coge los valores de pokemon1 y los introduce e
 
 const action = { action: 'Fly', time: '60 seconds' };
 
-const copy2 = { ...pokemon1, ...pokemon2 };
+const copy2 = { ...pokemon1, ...pokemon2 }; 
 const copy3 = { ...pokemon2, ...action };
 
 console.log(copy2);
 console.log(copy3);
 
 const pokemon3 = { name: 'Ditto', gen: 1, type: 'normal', action: 'copy' };
-const copy4 = { ...pokemon3, ...pokemon1 };
+const copy4 = { ...pokemon3, ...pokemon1 }; // pikachu, 1, electric, copy
 
 console.log(copy4);

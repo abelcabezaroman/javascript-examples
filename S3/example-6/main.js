@@ -1,5 +1,9 @@
 const div$$ = document.querySelector('.fn-check-me')
 
+div$$.removeAttribute("id");
+div$$.setAttribute("href", "http://google.es");
+const attributeValue = div$$.getAttribute("data-aria-label");
+
 console.log(div$$.attributes);
 
 console.log(div$$.className);
@@ -12,14 +16,24 @@ console.log(div$$.classList);
 
 console.log(div$$.id);
 
-console.log(div$$.innerHTML);
-div$$.innerHTML = '<p>adsadsad</p>'
+
+
+//<div>
+//     <p>Soy un <span>div</span></p>
+//</div>
+
+console.log(div$$.innerHTML); // <p>Soy un <span>div</span></p>
+div$$.innerHTML = '<p class="clase-dinamica"><span>Pepe</span></p>'; // <div><p>...</p></div>
+console.log(div$$.outerHTML); // <div><p>Soy un <span>div</span></p></div>
+div$$.outerHTML = `<p></p>` // <p></p>
+
 
 console.log(div$$.nodeName);
 
 console.log(div$$.nodeValue);
 
 console.log(div$$.style);
+
 div$$.style.color = 'red';
 div$$.style.fontSize = '24px';
 div$$.style.fontFamily = 'Arial';

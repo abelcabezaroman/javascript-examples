@@ -10,9 +10,7 @@ function imprimirAumentarTiempo() {
     console.log(tiempo++)
 }
 
-let interval = setInterval(imprimirAumentarTiempo, 1000);
-
-
+const interval = setInterval(imprimirAumentarTiempo, 1000);
 
 function cleanInterval() {
     clearInterval(interval);

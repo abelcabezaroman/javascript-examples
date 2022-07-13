@@ -6,10 +6,21 @@ a = 15;
 a = true; // false
 a = null;
 
+
+const x = "Abel";
+const y = x;
+
 // No primitivos
-a = {name: 'Abel', surname: 'Cabeza Román', years: 99 };
-console.log(a);
-console.log(a.name, a.surname, a.years);
+const b = {name: {firstName: "Abel", secondName: "Felix"}, surname: "Cabeza Román", years: 99 };
+console.log(b);
+console.log(b.name.firstName, b.surname, b.years);
+
+b.name.firstName = "Pepe";
+b.role = "Profesor";
+
+console.log(b.role) // Profesor
+
+// b = "Juan" Esto no
 
 a = ['Abel Cabeza Román', 'Jesica Victoria', 'Angel Garcia Lopez']
 console.log(a);
@@ -35,13 +46,58 @@ console.log(a[2])
 
 
 // Referencias
-
-let b = 10
-let c = b;
+let b = 10;
+let c = b; // 10
 c = 20;
 // b = 10 y c = 20
 
+
 let d = {name: 'Abel', surname: 'Cabeza Román'};
+// let e = d;
 let e = d;
-e.name = 'Pedro'
-// e.name = 'Pedro' y d.name = 'Pedro'
+e = {name: "Juan", surname: "Pepe"};
+
+e.name = 'Pedro';
+console.log(d.name);
+console.log(e.name);
+
+
+
+
+
+
+const f = {name: "Gris", gender: "F"};
+const g = {name: 'Abel', surname: 'Cabeza Román', pet: f};
+const h = {...g};
+
+h.name = "Sara";
+
+h.pet.name = "Julius";
+
+console.log(f.name);
+console.log(h.pet.name);
+console.log(g.name);
+
+
+const i = JSON.parse(JSON.stringify(g));
+console.log(i)
+
+JSON.stringify(g)  // "{name: 'Abel', surname: 'Cabeza Román', pet: {name: "Gris", gender: "F"}}"
+JSON.parse(JSON.stringify(g))  // {name: 'Abel', surname: 'Cabeza Román', pet: {name: "Gris", gender: "F"}}
+
+
+
+
+
+// Referencias de list
+const list = [1,5,7,8];
+
+function remove(paramList){
+    paramList.splice(0, 1);
+    console.log(paramList) 
+}
+
+remove([...list]); // [5, 7, 8]
+remove([6, 9, 10]); // [9, 10]
+
+console.log(list) // [1, 5, 7, 8]

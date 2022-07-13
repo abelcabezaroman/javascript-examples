@@ -19,4 +19,3 @@ insertHereSec$$.innerHTML = `<img src="https://picsum.photos/300/200?random=2"/>
 const insertOverMe$$ = document.querySelector('.fn-insert-over-me');
 
 insertOverMe$$.outerHTML = `<div><p>Estoy sobrescribiendo</p></div>`;
-

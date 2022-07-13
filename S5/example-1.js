@@ -2,7 +2,10 @@ function a() {
 
 }
 
-const a = () => { }
+const a = () => { 
+
+}
+
 function a() {
 
 }
@@ -14,9 +17,14 @@ const a = () => {
 const hello = 'Hello';
 const name = 'Abel';
 
-function getText(hello, name) {
+function getText(hello = "Hola", name = "Pepe") {
     return hello + ' ' + name;
 }
+
+getText()
+getText("Hello")
+getText("Hello", "Abel")
+
 
 // IGUALES
 const getText = (hello, name) => {
@@ -42,13 +50,14 @@ function print(printText) {
 }
 
 // IGUALES
+const print = (printText) => {
+    console.log(printText)
+}
+
 const print = printText => {
     console.log(printText)
 }
 
-const print = (printText) => {
-    console.log(printText)
-}
 // IGUALES
 
 
@@ -61,9 +70,13 @@ const print = (printText) => {
 
 // COMBO BREAKER xd
 
-const getPrint = printText => printText;
+// function getPrint(printText){
+//     return "Hola " + printText;
+// }
 
+const getPrint = printText => "Hola " + printText;
 
+console.log(getPrint("Abel")) // Hola Abel;
 
 
 

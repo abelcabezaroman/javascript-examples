@@ -1,16 +1,17 @@
-const dragonBall = {
-    name: 'Son',
-    lastname: 'Goku',
-    fullname: function () {
-        console.log('Dentro', this);
-        return this.name + ' ' + this.lastname;
-    }
-}
 
-console.log(dragonBall.fullname())
-console.log('Fuera', this);
+// const dragonBall = {
+//     name: 'Son',
+//     lastname: 'Goku',
+//     fullname: function () {
+//         console.log('Dentro', this);
+//         return this.name + ' ' + this.lastname;
+//     }
+// }
 
-// ARROW FUNCTIONS
+// console.log(dragonBall.fullname())
+// console.log('Fuera', this);
+
+// // ARROW FUNCTIONS
 
 const dragonBall = {
     name: 'Son',

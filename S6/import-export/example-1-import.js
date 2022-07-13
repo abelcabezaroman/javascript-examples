@@ -1,3 +1,5 @@
-import {name} from './example-1-export';
+import pepe, {name as juan} from './example-1-export';
 
-console.log(name);
+console.log(juan);
+
+pepe();

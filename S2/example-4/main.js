@@ -1,6 +1,5 @@
 const myArray = ['Alberto', 'Mario', 'Jose', 'Juan'];
 
-
 const myFunction = function (element) {
     console.log(element);
 }
@@ -16,7 +15,7 @@ myArray.forEach(function (element) {
 // FOR
 
 for (let index = 0; index < myArray.length; index++) {
-    const element = myArray[index];
+    console.log(myArray[index]);
 }
 
 // FOROF

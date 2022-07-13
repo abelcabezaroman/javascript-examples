@@ -1,14 +1,16 @@
 // OBJECT
 
-const user = { name: 'Abel', role: 'Profesor' };
+const user = { name: 'Abel', role: {name:'Profesor', years: 2 }, age: 26};
 
-const { name, role } = user;
+const { name : nombre, role, role: {years}, age } = user; 
+console.log(nombre); // Abel
+console.log(years); // 2
+console.log(age); // 26
 // Es igual a declararlo así. En el destructurín las variables tienene que llamarse igual a las propiedades del objeto
 // const name = user.name;
 // const role = user.role;
 
-console.log(name, role);
-
+console.log(username, role);
 
 
 const returnObj = () => {
