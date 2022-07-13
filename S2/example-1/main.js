@@ -1,11 +1,11 @@
 function sum(num1, num2) {
-    console.log(num1 + num2);
+    num1 + num2
 }
 
 // Ya tenemos declarada nuestra función para sumar dos números
 
-sum(2, 4); // Aqui estamos invocando a la función (ejecutándola)
-sum(4, 6); // Aqui estamos invocando a la función (ejecutándola)
+sum(2, 4); // 6 Aqui estamos invocando a la función (ejecutándola)
+sum(4, 6); // 10 Aqui estamos invocando a la función (ejecutándola)
 
 
 
@@ -16,36 +16,47 @@ function substract(num1, num2) {
 }
 
 // Ya tenemos declarada nuestra función para sumar dos números
-
-const result = substract(10, 4); // Aqui estamos invocando a la función (ejecutándola)
+const result = sum(10, 4); // Aqui estamos invocando a la función (ejecutándola)
 const result2 = substract(10, 6); // Aqui estamos invocando a la función (ejecutándola)
 console.log(result); // 6
-alert(result2); // 4
+console.log(result2); // 4
+
+
+
+
+
 
 
 
 
 function printMessage(textToPrint) {
-    console.log(textToPrint);
+    console.log("Bienvenido a Upgrade Hub " + textToPrint);
 }
 
-printMessage('Hey!');
-printMessage('Ola!');
-printMessage('Gruasias!');
+printMessage('Abel'); // Bienvenido a Upgrade Hub Abel
+printMessage('Carlos'); // Bienvenido a Upgrade Hub Carlos
+printMessage('Luisa'); // Bienvenido a Upgrade Hub Luisa
 
 
-function overAge(age) {
-    if (age >= 18) {
-        return 'You are so big!';
+function checkName(name) {
+    if (name === "Abel") {
+        return  name + '. Peaso profesor.';
     } else {
-        return 'You are a child yet';
+        return name + '. Ese alumno buenooo...programame ninio que esto es la ostia ya verás.';
     }
 }
 
-const text = overAge(16);
+const text = checkName("Abel");
 printMessage(text);
 // IGUAL
-printMessage(overAge(16));
+printMessage(checkName("Abel"));
+
+
+
+
+
+
+
 
 
 const anime = "Code Geass";
@@ -105,3 +116,22 @@ function splitName(fullName, nameLength = 3){
 }
 
 splitName("Manolo Gutierrez", 6)
+
+
+
+
+
+
+
+
+
+// CONCEPTO SCOPE
+let nana = "Abel";
+
+function a(){
+    let greet = "Hola ";
+    console.log(greet + nana); // Hola Abel
+}
+
+console.log(greet + nana); // Abel
+
