@@ -1,14 +1,24 @@
 // OBJECT
+const name = "Christian";
 
-const user = { name: 'Abel', role: {name:'Profesor', years: 2 }, age: 26};
+const user = { 
+    name: 'Abel', 
+    role: {
+        name:'Profesor', 
+        years: 3
+    }, 
+    age: 27
+};
 
-const { name : nombre, role, role: {years}, age } = user; 
-console.log(nombre); // Abel
-console.log(years); // 2
-console.log(age); // 26
+const {  name: otherName, role: { name, years}, age } = user; 
+console.log(name); // Christian
+console.log(otherName); // Abel
+console.log(years); // 3
+console.log(age); // 27
 // Es igual a declararlo así. En el destructurín las variables tienene que llamarse igual a las propiedades del objeto
 // const name = user.name;
 // const role = user.role;
+
 
 console.log(username, role);
 
@@ -17,7 +27,7 @@ const returnObj = () => {
     return { city: 'Seul', country: 'Corea del sur' };
 }
 
-const {city, country} = returnObj(); // city = 'Seul', country = 'Corea del sur'
+const {city: ciudad, country} = returnObj(); // city = 'Seul', country = 'Corea del sur'
 // IGUAL
 // const {country, city} = returnObj(); // city = 'Seul', country = 'Corea del sur'
 
@@ -26,17 +36,15 @@ console.log(city, country);
 
 // ARRAY
 
-const returnArray = () => {
-    return ['Seul', 'Tokio', 'Madrid', 'Londres'];
-}
+const cities = ['Seul', 'Tokio', 'Madrid', 'Londres'];
 
-const [ciudadAsiatica, ciudadArchipielago, ladelcentro, ciudadinglesa] = returnArray();
+const [ciudadAsiatica, ciudadArchipielago, ladelcentro, ciudadinglesa] = cities;
 // IGUAL
-// const arrrayCities = returnArray();
-// const ciudadAsiatica = arrrayCities[0];
-// const ciudadArchipielago = arrrayCities[1];
-// const ladelcentro = arrrayCities[2];
-// const ciudadinglesa = arrrayCities[3];
+// const cities = returnArray();
+// const ciudadAsiatica = cities[0];
+// const ciudadArchipielago = cities[1];
+// const ladelcentro = cities[2];
+// const ciudadinglesa = cities[3];
 
 console.log(ciudadAsiatica);
 console.log(ciudadArchipielago);

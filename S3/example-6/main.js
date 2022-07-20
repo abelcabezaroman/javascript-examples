@@ -1,7 +1,12 @@
+const a$$ = document.querySelector('.fn-pepe')
+
+a$$.removeAttribute("id");
+a$$.setAttribute("href", "http://google.es");
+a$$.getAttribute("href"); //http://google.es
+
+
 const div$$ = document.querySelector('.fn-check-me')
 
-div$$.removeAttribute("id");
-div$$.setAttribute("href", "http://google.es");
 const attributeValue = div$$.getAttribute("data-aria-label");
 
 console.log(div$$.attributes);
@@ -25,7 +30,7 @@ console.log(div$$.id);
 console.log(div$$.innerHTML); // <p>Soy un <span>div</span></p>
 div$$.innerHTML = '<p class="clase-dinamica"><span>Pepe</span></p>'; // <div><p>...</p></div>
 console.log(div$$.outerHTML); // <div><p>Soy un <span>div</span></p></div>
-div$$.outerHTML = `<p></p>` // <p></p>
+// div$$.outerHTML = `<p></p>` // <p></p>
 
 
 console.log(div$$.nodeName);
@@ -49,6 +54,6 @@ console.log(div$$.childNodes);
 const p$$ = document.querySelector('.fn-access-here p');
 const h4$$ = document.querySelector('.fn-access-here h4');
 
-const div$$ = document.querySelector('.fn-access-here')
-const p$$ = div$$.querySelector('p');
-const h4$$ = div$$.querySelector('h4');
+const div2$$ = document.querySelector('.fn-access-here')
+const p2$$ = div2$$.querySelector('p');
+const h42$$ = div2$$.querySelector('h4');

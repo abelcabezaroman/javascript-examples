@@ -28,11 +28,11 @@ function callbackexample2() {
     console.log(`Soy una mariposa mira como vuelo`);
 }
 
-function addItemAndTrigger(functionCallbackExample) {
+function addItemAndTrigger(callback) {
     console.log('Soy el padre');
-    const p$$ = document.createElement('p')
-    p$$.classList.add('fn-loquesea')
-    functionCallbackExample();
+    // const p$$ = document.createElement('p')
+    // p$$.classList.add('fn-loquesea')
+    callback();
 }
 
 addItemAndTrigger(callbackexample);
@@ -40,7 +40,8 @@ addItemAndTrigger(callbackexample);
 // Soy un dinosaurio me estinguí
 addItemAndTrigger(callbackexample2);
 // Soy el padre
-// Soy una mariposa mira como vuel
+// Soy una mariposa mira como vuelo
+
 addItemAndTrigger(function () {
     console.log(`Soy un puercospin`);
 });
@@ -132,3 +133,34 @@ div$$.addEventListener("click", print);
 div$$.addEventListener("click", function(){
     console.log("Hey!");
 });
+
+
+const numbers = [1,2,456,35,6234]
+numbers.find(function (num){return num === 456})
+
+
+
+
+
+
+
+
+
+function print(callback){
+    console.log("Resultado de tu operación matematica: " + callback())
+}
+
+function sum(a, b){
+    return a + b;
+}
+
+// function substract(a, b){
+//     return a - b;
+// }
+
+function pepe(){
+    sum(10, 5)
+}
+
+print(pepe) // 10 + 5
+print(function() {sum(20, 10)}) // 20 + 10

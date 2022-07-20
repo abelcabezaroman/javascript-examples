@@ -6,7 +6,7 @@
 
 
 
-const p$$ = document.createElement('p');
+const p$$ = document.createElement('span');
 
 const insertHere$$ = document.querySelector('[data-function="insertHere"]');
 

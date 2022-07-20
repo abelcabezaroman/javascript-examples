@@ -1,4 +1,3 @@
-
 // const dragonBall = {
 //     name: 'Son',
 //     lastname: 'Goku',
@@ -8,19 +7,20 @@
 //     }
 // }
 
+// console.log(dragonBall.name);
 // console.log(dragonBall.fullname())
 // console.log('Fuera', this);
 
 // // ARROW FUNCTIONS
 
 const dragonBall = {
-    name: 'Son',
-    lastname: 'Goku',
-    fullname: () => {
-        console.log('Dentro', this);
-        return this.name + ' ' + this.lastname;
-    }
-}
+  name: "Son",
+  lastname: "Goku",
+  fullname: () => {
+    console.log("Dentro", this);
+    return this.name + " " + this.lastname;
+  },
+};
 
-console.log(dragonBall.fullname())
-console.log('Fuera', this);
+console.log(dragonBall.fullname());
+console.log("Fuera", this);

@@ -53,9 +53,8 @@ c = 20;
 
 
 let d = {name: 'Abel', surname: 'Cabeza Román'};
-// let e = d;
 let e = d;
-e = {name: "Juan", surname: "Pepe"};
+// e = {name: "Juan", surname: "Pepe"};
 
 e.name = 'Pedro';
 console.log(d.name);
@@ -74,9 +73,13 @@ h.name = "Sara";
 
 h.pet.name = "Julius";
 
-console.log(f.name);
+console.log(f.name); 
 console.log(h.pet.name);
-console.log(g.name);
+console.log(g.name); 
+
+
+
+
 
 
 const i = JSON.parse(JSON.stringify(g));
