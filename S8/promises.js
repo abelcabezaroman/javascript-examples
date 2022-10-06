@@ -1,7 +1,7 @@
 const name = "pepe";
 
 const promise = new Promise((resolve, reject) => {
-  if (name === "juan") {
+  if (name === "pepe") {
     setTimeout(function () {
       resolve();
     }, 2000);
@@ -15,7 +15,17 @@ promise
     console.log(`resuelto`);
   })
   .catch(() => {
-    console.log(`resuelto`);
+    console.log(`resuelto mal`);
   });
+
+// async function playPromise() {
+//   try {
+//     await promise;
+//     console.log(`resuelto`);
+//   } catch (e) {
+//     console.log(`resuelto`, e);
+//   }
+// }
+// playPromise();
 
 console.log("Voy antes");

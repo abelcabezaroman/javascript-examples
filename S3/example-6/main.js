@@ -2,8 +2,8 @@ const a$$ = document.querySelector('.fn-pepe')
 
 a$$.removeAttribute("id");
 a$$.setAttribute("href", "http://google.es");
-a$$.getAttribute("href"); //http://google.es
-
+const aHref = a$$.getAttribute("href"); 
+console.log(aHref);//http://google.es
 
 const div$$ = document.querySelector('.fn-check-me')
 
@@ -27,10 +27,24 @@ console.log(div$$.id);
 //     <p>Soy un <span>div</span></p>
 //</div>
 
+// const p$$ = document.createElement("p");
+// p$$.classList.add("clase-dinamica");
+// const span$$ = document.createElement("span");
+// span$$.textContent = "Pepe";
+// p$$.appendChild(span$$);
+// div$$.appendChild(p$$);
+const nombre = "Abel";
+
 console.log(div$$.innerHTML); // <p>Soy un <span>div</span></p>
-div$$.innerHTML = '<p class="clase-dinamica"><span>Pepe</span></p>'; // <div><p>...</p></div>
+
+div$$.innerHTML = `<p class="clase-dinamica">
+    <span>${nombre}</span>
+</p>`; // <div><p>...</p></div>
+
+// '<p class="clase-dinamica"><span>' + nombre + '</span></p>'
+
 console.log(div$$.outerHTML); // <div><p>Soy un <span>div</span></p></div>
-// div$$.outerHTML = `<p></p>` // <p></p>
+div$$.outerHTML = '<div><p class="clase-dinamica"><span>Pepe</span></p></div>' // <p></p>
 
 
 console.log(div$$.nodeName);

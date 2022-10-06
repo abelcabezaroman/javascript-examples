@@ -1,14 +1,11 @@
 // const div$$ = document.createElement('div');
-
-// document.body.appendChild(div$$);
-
+// document.body.appendChild(p$$);
 
 
 
+const p$$ = document.createElement('p');
 
-const p$$ = document.createElement('span');
-
-const insertHere$$ = document.querySelector('[data-function="insertHere"]');
+const insertHere$$ = document.querySelector('[data-fn="insertHere"]');
 
 insertHere$$.appendChild(p$$);
 

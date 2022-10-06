@@ -10,6 +10,22 @@ a = null;
 const x = "Abel";
 const y = x;
 
+
+let person = {
+    name: "Abel",
+    role: "Teacher",
+    age: 27
+}
+
+console.log(person.name) // "Abel"
+console.log(person.role) // "Teacher"
+console.log(person.age) // 27
+
+person.alias = "El Pepe"
+console.log(person.alias) // "El Pepe"
+
+
+
 // No primitivos
 const b = {name: {firstName: "Abel", secondName: "Felix"}, surname: "Cabeza Román", years: 99 };
 console.log(b);
@@ -54,7 +70,7 @@ c = 20;
 
 let d = {name: 'Abel', surname: 'Cabeza Román'};
 let e = d;
-// e = {name: "Juan", surname: "Pepe"};
+e = {name: "Juan", surname: "Pepe"};
 
 e.name = 'Pedro';
 console.log(d.name);

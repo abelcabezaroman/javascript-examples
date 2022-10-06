@@ -1,10 +1,6 @@
 function a() {}
 
-const a = () => {};
-
-function a() {}
-
-const a = () => {};
+const a = () => {}
 
 const hello = "Hello";
 const name = "Abel";
@@ -44,7 +40,7 @@ const print = (printText) => {
   console.log(printText);
 };
 
-const print = (printText) => {
+const print = printText => {
   console.log(printText);
 };
 
