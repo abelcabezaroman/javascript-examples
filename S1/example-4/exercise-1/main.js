@@ -1,5 +1,5 @@
-const name = 'Abel';
-const surname = 'Cabeza Román';
+let name = 'Abel';
+let surname = 'Cabeza Román';
 let years = 99;
 
 

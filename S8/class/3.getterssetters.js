@@ -1,13 +1,20 @@
 class Moto {
-    #color;
+    #color = "Rojo";
     constructor(marca, modelo) {
         this.marca = marca;
         this.modelo = modelo;
     }
 
     get color() {
-        return `color: ${this.#color}`;
+        return "Color de la moto: " + this.#color;
     }
+    // getColor() {
+    //     return "Color de la moto: " + this.#color;
+    // }
+
+    // set color(color){
+    //     this.#color = color;
+    // }
 
     set color(color){
         if(color === 'Verde' || color === 'Negro'){
@@ -19,5 +26,8 @@ class Moto {
 }
 
 const moto1 = new Moto('Kawasaki', 'Ninja');
-moto1.color = "Verde"
-console.log(moto1.color);
+console.log(moto1.color); // Rojo
+moto1.color = "Verde";
+console.log(moto1.color); // Verde
+
+// console.log(moto1.getColor());

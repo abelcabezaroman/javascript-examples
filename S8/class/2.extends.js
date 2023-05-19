@@ -1,5 +1,5 @@
 class Vehiculo {
-    constructor(nombre, color = 'Blanco') {
+    constructor(nombre, color) {
         this.nombre = nombre
         this.color = color
     }
@@ -15,13 +15,13 @@ class Vehiculo {
 }
 
 class Coche extends Vehiculo {
-    constructor(nombre, color, esDescapotable) {
+    constructor(nombre, color = "Blanco", esDescapotable = true) {
         super(nombre, color);
         this.esDescapotable = esDescapotable;
     }
 }
 
-class Moto extends Vehiculo {
+class Moto extends Coche {
     constructor(nombre, color, tieneSidecar) {
         super(nombre, color);
         this.tieneSidecar = tieneSidecar;
@@ -31,6 +31,8 @@ class Moto extends Vehiculo {
 
 const coche1 = new Coche('Ford Mustang', 'Negro', false);
 console.log(coche1.arrancar());
+const coche2 = new Coche('Ferrari Mula');
+
 const moto1 = new Moto('Kawasaki Ninja', 'Verde', false);
 console.log(moto1.arrancar());
 

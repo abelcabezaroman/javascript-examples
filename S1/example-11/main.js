@@ -37,3 +37,14 @@ if(age > 18){
 } else {
     accessAllowed2 = "Vete de aqui";
 }
+
+
+const tengoCarnet = true;
+const miEdad = 27;
+const soyElReyDeEspania = false;
+
+if((miEdad >= 18 && tengoCarnet) || (soyElReyDeEspania)){
+    console.log("Puedo conducir")
+} else{
+    console.log("No puedo conducir")
+}

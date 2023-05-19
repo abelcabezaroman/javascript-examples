@@ -1,7 +1,8 @@
 class Personaje{
-    // nombre;
-    // serie;
-    // edad;
+    nombre;
+    serie;
+    edad;
+    apellido;
     altura = 180;
 
     constructor(nombre, apellido, serie, edad){

@@ -1,4 +1,3 @@
-// Analizad cual sería el resultado de las siguientes comparaciones
 const result1 = true == 1;
 const result2 = false == 0;
 const result3 = "1" == 1;
