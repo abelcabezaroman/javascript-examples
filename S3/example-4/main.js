@@ -4,6 +4,7 @@ document.body.appendChild(div$$);
 
 
 
+const p$$ = document.createElement('p');
 
 
 // const p$$ = document.createElement('span');

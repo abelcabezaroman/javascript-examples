@@ -1,5 +1,5 @@
 // OBJECT
-const name = "Christian";
+// const name = "Christian";
 
 const user = { 
     name: 'Abel', 
@@ -11,7 +11,7 @@ const user = {
 };
 
 const {  name: otherName, role: { name, years}, age } = user; 
-console.log(name); // Christian
+console.log(name); // Pro
 console.log(otherName); // Abel
 console.log(years); // 3
 console.log(age); // 27
@@ -40,7 +40,7 @@ const cities = ['Seul', 'Tokio', 'Madrid', 'Londres'];
 
 const [ciudadAsiatica, ciudadArchipielago, ladelcentro, ciudadinglesa] = cities;
 // IGUAL
-// const cities = returnArray();
+// const cities = ['Seul', 'Tokio', 'Madrid', 'Londres'];
 // const ciudadAsiatica = cities[0];
 // const ciudadArchipielago = cities[1];
 // const ladelcentro = cities[2];
@@ -50,6 +50,5 @@ console.log(ciudadAsiatica);
 console.log(ciudadArchipielago);
 console.log(ladelcentro);
 console.log(ciudadinglesa);
-console.log(returnArray())
 
 

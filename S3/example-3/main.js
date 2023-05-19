@@ -32,3 +32,10 @@ const fn$$ = document.querySelector('.fn-test');
 
 console.log(fn$$);
 
+
+const father$$ = document.querySelector("[data-fn='father']")
+const paragraph$$ = father$$.querySelector("[data-fn='paragraph']")
+
+// MAL, menos optimo y puede dar problemas si no queremos los que esten fuera del father
+// const father$$ = document.querySelector("[data-fn='father']")
+// const paragraph$$ = document.querySelector("[data-fn='paragraph']")

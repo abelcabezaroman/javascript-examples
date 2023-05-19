@@ -30,6 +30,24 @@ console.log(result4); // 1
 
 
 
+function dynamic(num1, num2, type) {
+    if(type === "+"){
+        return num1 + num2;
+    } else if(type === "-"){
+        return num1 - num2;
+    }
+
+    console.log("No se multiplicar")
+}
+
+
+const dynamicResult = dynamic(10, 2, "+");
+const dynamicResult2 = dynamic(8, 2, "-");
+const dynamicResult3 = dynamic(8, 2, "*"); // No se multiplicar
+
+console.log(dynamicResult); // 12
+console.log(dynamicResult2); // 6
+console.log(dynamicResult3); // undefined
 
 
 
@@ -73,7 +91,7 @@ const birthday = "2020/11/20";
 
 function print(date){
     const author = "Pepe Comecomics";
-    console.log(anime);
+    console.log(anime); 
     console.log(author);
     console.log(date);
 }
@@ -82,6 +100,9 @@ console.log(author); // undefined
 
 print("2020/12/12");
 print(birthday);
+
+
+
 
 
 

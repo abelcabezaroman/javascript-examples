@@ -1,11 +1,13 @@
-fetch('https://api.genderize.io?name=peter')
-    .then(res => res.json())
-    .then(resParsedToJSON => {
-        console.log(resParsedToJSON);
-    }).catch((err) => {
-        console.log(err)
-    });
+fetch("https://api.genderize.io?name=peter")
+  .then((res) => res.json())
+  .then((resParsedToJSON) => {
+    console.log(resParsedToJSON);
 
+    printGender();
+  })
+  .catch((error) => {
+    alert("Ha habido un error", error);
+  });
 
 // ASYNC AWAIT
 
@@ -27,3 +29,4 @@ async function getGender() {
 // }
 
 getGender();
+console.log("Me ejecuto antes");

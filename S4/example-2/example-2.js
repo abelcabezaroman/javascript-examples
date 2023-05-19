@@ -36,11 +36,8 @@ function addItemAndTrigger(callback) {
 }
 
 addItemAndTrigger(callbackexample);
-// Soy el padre
-// Soy un dinosaurio me estinguí
+
 addItemAndTrigger(callbackexample2);
-// Soy el padre
-// Soy una mariposa mira como vuelo
 
 addItemAndTrigger(function () {
     console.log(`Soy un puercospin`);
@@ -48,10 +45,9 @@ addItemAndTrigger(function () {
 
 
 
-
-function a(valor) {
+function a(callback) {
     console.log("Hey!");
-    valor("Pepe");
+    callback("Pepe");
 }
 
 function c(name) {
@@ -65,6 +61,13 @@ function d(name) {
 a(c);
 a(d);
 c("Juan");
+d("Luisa");
+
+
+
+array.filter(function (item, index){
+    console.log(item)
+})
 
 const text = "Hola";
 

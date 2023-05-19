@@ -8,7 +8,7 @@ const noPuedoBeberEnEEUU = age < minAgeEEUU; // true
 const cualCadenaEsMayor = me > "Coche"; // true // Compara el tamaño...numero de caracteres
 
 const aniosCasados = "50";
-const celebrarBodaDeOro = aniosCasados == 50; // true
+const celebrarBodaDeOro = "50" == 50; // true
 const celebrarBodaDeOroB = "50" === 50; // false
 
 
@@ -26,6 +26,11 @@ const tengoCoche = true
 const tengoMoto = false
 const puedoConducirBro = myAge >= 18 && tengoCarnet && (tengoCoche || tengoMoto)
 console.log(puedoConducirBro) // true
+
+
+if(myAge >= 18 && tengoCarnet && (tengoCoche || tengoMoto)){
+    console.log("Me ejecuto")
+}
 
 
 

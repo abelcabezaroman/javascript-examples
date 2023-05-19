@@ -55,7 +55,7 @@ console.log(copy4);
 // FORMULARIO
 
 const dataUser = {name: "Abel", age: 27};
-const dataUse2 = {age: 32};
+const dataUser2 = {age: 32};
 const defaultData = {name: "Sin nombre", age: 99, role: "Profesor"};
 
 const newUser = {...defaultData, ...dataUser}; // {name: "Abel", age: 27, role: "Profesor"}

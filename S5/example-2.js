@@ -1,11 +1,11 @@
-// const dragonBall = {
-//     name: 'Son',
-//     lastname: 'Goku',
-//     fullname: function () {
-//         console.log('Dentro', this);
-//         return this.name + ' ' + this.lastname;
-//     }
-// }
+const dragonBall = {
+    name: 'Son',
+    lastname: 'Goku',
+    fullname: function () {
+        console.log('Dentro', this);
+        return this.name + ' ' + this.lastname;
+    }
+}
 
 // console.log(dragonBall.name);
 // console.log(dragonBall.fullname())
@@ -19,8 +19,9 @@ const dragonBall = {
   fullname: () => {
     console.log("Dentro", this);
     return this.name + " " + this.lastname;
-  },
+  }
 };
 
+console.log(dragonBall.name);
 console.log(dragonBall.fullname());
 console.log("Fuera", this);
