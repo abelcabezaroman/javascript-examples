@@ -1,4 +1,4 @@
-function sum(num1, num2) {
+function sum(num1, num2 = 2) {
     num1 + num2
 }
 
@@ -6,6 +6,7 @@ function sum(num1, num2) {
 
 sum(2, 4); // 6 Aqui estamos invocando a la función (ejecutándola)
 sum(4, 6); // 10 Aqui estamos invocando a la función (ejecutándola)
+sum(6); // 8 Aqui estamos invocando a la función (ejecutándola)
 
 
 
@@ -16,10 +17,15 @@ function substract(num1, num2) {
 }
 
 // Ya tenemos declarada nuestra función para sumar dos números
-const result = sum(10, 4); // Aqui estamos invocando a la función (ejecutándola)
+const result = substract(10, 4); // Aqui estamos invocando a la función (ejecutándola)
 const result2 = substract(10, 6); // Aqui estamos invocando a la función (ejecutándola)
+const result3 = substract(substract(10, 6), 1); // Aqui estamos invocando a la función (ejecutándola)
+const result4 = substract(5, substract(10, 6)); // Aqui estamos invocando a la función (ejecutándola)
+substract(5, substract(10, 6)); // Aquiel return se pierde al no recogerlo nadie
 console.log(result); // 6
 console.log(result2); // 4
+console.log(result3); // 3
+console.log(result4); // 1
 
 
 
@@ -46,12 +52,12 @@ function checkName(name) {
     }
 }
 
+
 const text = checkName("Abel");
-printMessage(text);
+printMessage(text); // Bienvenido a Upgrade Hub Abel. Peaso profesor.
 // IGUAL
-printMessage(checkName("Abel"));
-
-
+printMessage(checkName("Abel")); // Bienvenido a Upgrade Hub Abel. Peaso profesor.
+printMessage(checkName("Fulgencio")); // Bienvenido a Upgrade Hub Fulgencio. Ese alumno buenooo...programame ninio que esto es la ostia ya verás.
 
 
 
@@ -83,12 +89,12 @@ print(birthday);
 // CANCION DE LAS FUNCIONES
 
 // DPRU
-const param = "Abel";
 
-function showMustGoOn(text){
+function showMustGoOn(text, surname){
     console.log(text);
 }
 
+const param = "Abel";
 showMustGoOn(param);
 
 // showMustGoOn("Sara");
