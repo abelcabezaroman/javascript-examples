@@ -1,3 +1,5 @@
+//CLOUSURE
+
 // const generateAMultiplier = a => b => a * b;
 // const generateAMultiplier = a => (b) => a * b;
 
@@ -24,3 +26,4 @@ console.log(foo);
 // const soyYo = print();
 
 // soyYo();
+

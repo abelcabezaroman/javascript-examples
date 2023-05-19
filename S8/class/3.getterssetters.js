@@ -26,8 +26,14 @@ class Moto {
 }
 
 const moto1 = new Moto('Kawasaki', 'Ninja');
+<<<<<<< HEAD
 console.log(moto1.color); // Rojo
 moto1.color = "Verde";
 console.log(moto1.color); // Verde
 
 // console.log(moto1.getColor());
+=======
+moto1.color = "Negro"
+console.log(moto1.color);
+console.log(moto1.marca);
+>>>>>>> 2ca48af48e1d3e04bcba58c080f1bd5be28884fe

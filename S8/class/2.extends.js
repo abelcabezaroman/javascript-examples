@@ -35,4 +35,3 @@ const coche2 = new Coche('Ferrari Mula');
 
 const moto1 = new Moto('Kawasaki Ninja', 'Verde', false);
 console.log(moto1.arrancar());
-

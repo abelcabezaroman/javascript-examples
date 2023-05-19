@@ -12,19 +12,16 @@ fetch("https://api.genderize.io?name=peter")
 // ASYNC AWAIT
 
 async function getGender() {
-  try {
-    const res = await fetch("https://api.genderize.io?name=peter");
-    const resParsedToJSON = await res.json();
-
-    console.log(resParsedToJSON);
-
-    printGender();
-  } catch (error) {
-    alert("Ha habido un error", error);
-  }
+    try {
+        const res = await fetch('https://api.genderize.io?name=peter');
+        const resParsedToJSON = await res.json();
+        console.log(resParsedToJSON);
+    } catch (err) {
+        console.log(err)
+    }
 }
 
-function printGender() {}
+
 // const getGender = async () =>{
 //     const res = await fetch('https://api.genderize.io?name=peter');
 //     const resParsedToJSON = await res.json();

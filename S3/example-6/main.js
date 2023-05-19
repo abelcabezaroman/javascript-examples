@@ -36,15 +36,19 @@ console.log(div$$.id);
 const nombre = "Abel";
 
 console.log(div$$.innerHTML); // <p>Soy un <span>div</span></p>
-
-div$$.innerHTML = `<p class="clase-dinamica">
-    <span>${nombre}</span>
-</p>`; // <div><p>...</p></div>
-
-// '<p class="clase-dinamica"><span>' + nombre + '</span></p>'
+div$$.innerHTML = '<p class="clase-dinamica"><span>Pepe</span></p>'; // <div><p>...</p></div>
+// ESTA LINEA ES IGUAL A LO DE ABAJO
+// const p$$ = document.createElement("p");
+// p$$.classList.add("clase-dinamica");
+// const span$$ = document.createElement("span");
+// span$$.innerHTML = "Pepe";
+// p$$.appendChild(span$$);
+// div$$.appendChild(p$$);
 
 console.log(div$$.outerHTML); // <div><p>Soy un <span>div</span></p></div>
-div$$.outerHTML = '<div><p class="clase-dinamica"><span>Pepe</span></p></div>' // <p></p>
+// div$$.innerHTML = `<p>pepe</p>` // <div><p>pepe</p></div>
+// div$$.outerHTML = `<p>pepe</p>` // <p>pepe</p>
+
 
 
 console.log(div$$.nodeName);
@@ -65,9 +69,9 @@ console.log(div$$.childNodes);
 
 
 // EXAMPLE
-const p$$ = document.querySelector('.fn-access-here p');
+const p3$$ = document.querySelector('.fn-access-here p');
 const h4$$ = document.querySelector('.fn-access-here h4');
 
 const div2$$ = document.querySelector('.fn-access-here')
-const p2$$ = div2$$.querySelector('p');
+const p4$$ = div2$$.querySelector('p');
 const h42$$ = div2$$.querySelector('h4');
